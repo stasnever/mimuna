@@ -1,11 +1,16 @@
 import { observable, action, computed } from "mobx";
-import { persist } from "mobx-persist";
 import { observer, inject } from "mobx-react/native";
 import { Alert } from "react-native";
 
 class AppStore {
-  dataList = observable([]);
-  numerOfPays = observable(0);
+  @observable
+  dataList = [];
+  @observable
+  numerOfPays = 0;
+  @observable
+  credit = 355.45;
+  @observable
+  payment = 1;
 
   @action
   addMorePays() {
@@ -22,9 +27,25 @@ class AppStore {
     Alert.alert("הגבלת הוספה", "לא ניתן להוסיף יותר מ-3 חיובים", [{ text: "חזרה", onPress: () => console.log("OK Pressed") }], { cancelable: false });
   }
 
+  @action
+  addToCredit(amount) {
+    this.credit += amount;
+    console.log("credit", this.credit);
+  }
+
+  @action
+  addPayment() {
+    this.payment = this.payment > 35 ? this.payment % 36 : this.payment + 1;
+  }
+
   @computed
-  get initials() {
-    return this.first_name && this.last_name ? `${this.first_name[0].toUpperCase()}${this.last_name[0].toUpperCase()}` : "";
+  get getCredit() {
+    return this.credit.value;
+  }
+
+  @computed
+  get getPayment() {
+    return this.credit.value;
   }
 }
 

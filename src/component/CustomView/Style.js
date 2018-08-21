@@ -1,25 +1,25 @@
 import { StyleSheet } from "react-native";
-import { width, height, firstViewFixedSize, footerHeight, APageButtonWidth } from "../../utils/Consts";
+import { width, height, firstViewFixedSize, footerHeight, APageButtonWidth, APageButtonHeight } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
 
 const dynamicHeight = (height - firstViewFixedSize - footerHeight) * 0.5;
 
 const styles = StyleSheet.create({
   dynamicView: {
+    flex: 1,
     backgroundColor: colors.lightBlue,
     borderColor: "black",
     flexDirection: "column",
-    height: dynamicHeight,
     width: width,
-    justifyContent: "center"
+    justifyContent: "flex-start"
   },
   dynamicView2: {
+    flex: 1,
     backgroundColor: colors.navi,
     borderColor: "black",
     flexDirection: "column",
-    height: dynamicHeight,
     width: width,
-    justifyContent: "center"
+    justifyContent: "flex-start"
   },
   container: {
     backgroundColor: colors.navi,
@@ -29,36 +29,35 @@ const styles = StyleSheet.create({
     width: width
   },
   titleLogo: {
-    position: "absolute",
-    paddingBottom: dynamicHeight * 0.75,
-    paddingLeft: width * 0.05,
-    // color: "white",
+    paddingTop: 9,
+    paddingLeft: 15,
     flexDirection: "row",
     justifyContent: "flex-start",
-    alignItems: "center"
+    alignItems: "center",
+    marginBottom: 29
   },
   textPart1: {
     color: "white",
     fontSize: 25,
-    fontWeight: "bold"
+    fontWeight: "900"
   },
   textPart2: {
     color: "white",
-    fontSize: 17,
+    fontSize: 16,
     borderColor: "black",
-    paddingTop: 6
+    paddingTop: 7
   },
   buttonStyle: {
     backgroundColor: "white",
     width: APageButtonWidth,
-    height: (34 / 144) * dynamicHeight,
+    height: APageButtonHeight,
     borderColor: "transparent",
     borderWidth: 0,
     borderRadius: 90,
     justifyContent: "center"
   },
   titleStyle: {
-    fontWeight: "bold",
+    fontSize: 22,
     color: colors.purple
   },
   containerStyle: {
@@ -69,17 +68,21 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   mainText: {
-    paddingTop: 10,
+    paddingTop: 3,
     color: "white",
     textAlign: "center",
-    width: width * 0.8
+    width: width * 0.6,
+    fontSize: 16,
+    fontWeight: "900"
   },
   mainText2: {
     top: -4,
     color: "white",
     textAlign: "center",
     width: width * 0.8,
-    marginBottom: 5
+    marginBottom: 5,
+    fontSize: 16,
+    fontWeight: "900"
   }
 });
 

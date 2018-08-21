@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     color: colors.purple,
     fontWeight: "bold",
     textAlign: "center",
-    fontSize: 10,
-    paddingTop: 5
+    fontSize: 16,
+    paddingTop: 9
   },
   arrowCircle: {
     width: circleImageRadius,

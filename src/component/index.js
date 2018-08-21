@@ -9,5 +9,19 @@ import DynamicTitleWithIcon from "./DynamicTitleWithIcon";
 import PayComponent from "./PayComponent";
 import Calendar from "./Calendar";
 import ProgressBar from "./ProgressBar";
+import FirstViewPageAComponent from "./FirstViewPageAComponent";
 
-export { ProgressBar, Calendar, PayComponent, Images, CustomView, FooterNavBar, DynamicTitle, MainFooterButton, CustomViewMypay, CustomViewMyCred, DynamicTitleWithIcon };
+export {
+  FirstViewPageAComponent,
+  ProgressBar,
+  Calendar,
+  PayComponent,
+  Images,
+  CustomView,
+  FooterNavBar,
+  DynamicTitle,
+  MainFooterButton,
+  CustomViewMypay,
+  CustomViewMyCred,
+  DynamicTitleWithIcon
+};

@@ -8,10 +8,9 @@ const styles = StyleSheet.create({
   container: {
     position: "relative",
     alignItems: "center",
-    width: 100,
-    height: 100,
-    borderBottomColor: "red",
-    borderWidth: 2
+    alignContent: "flex-start",
+    width: 75,
+    height: 75
   },
   text: {
     color: "white",
@@ -20,8 +19,9 @@ const styles = StyleSheet.create({
   },
   textWrap: {
     position: "absolute",
-    top: 40,
-    left: 30
+    top: 30,
+    left: 20,
+    backgroundColor: "transparent"
   }
 });
 

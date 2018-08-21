@@ -1,23 +1,24 @@
 import React, { Component } from "react";
 import { Platform, Text, View } from "react-native";
-import { Images, CustomView, FooterNavBar } from "../../component";
+import { Images, CustomView, FooterNavBar, FirstViewPageAComponent } from "../../component";
 import { texts } from "../../utils/Texts";
 import Style from "./Style";
+import { colors } from "../../utils/Color";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 class NotLoggedInScreen extends Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <View style={Style.container}>
-        <View style={Style.firstView}>
-          <Images src={"https://via.placeholder.com/150x150"} />
-          <Text style={Style.welcomeText}>{texts.not_logged_in_page_welcome_text}</Text>
-          <Text style={Style.mainText}>{texts.not_logged_in_page_main_text_1}</Text>
-          <Text style={Style.mainText3}>{texts.not_logged_in_page_main_text_3}</Text>
-          <View style={Style.arrowCircle} />
+        <FirstViewPageAComponent />
+        <View style={Style.arrowCircle}>
+          <Icon style={{ position: "absolute", backgroundColor: "transparent", top: 20, left: 15 }} name="angle-double-down" size={40} color={colors.lightRed} />
         </View>
+        <Text style={Style.mainText3}>{texts.not_logged_in_page_main_text_4}</Text>
         <CustomView
           viewStyle={"firstView"}
           logoText1={texts.not_logged_in_page_my_play_header_text_1}

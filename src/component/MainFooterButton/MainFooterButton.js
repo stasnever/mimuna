@@ -21,7 +21,6 @@ class MainFooterButton extends Component {
     return (
       <TouchableOpacity
         onPress={() => {
-          this.navigateToNextComponent() == "LoggedIn" ? this.props.AppStore.addMorePays() : null;
           this.props.navigation.navigate(this.navigateToNextComponent());
         }}
         style={Style.circle}

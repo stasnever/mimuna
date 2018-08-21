@@ -9,7 +9,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 const DynamicTitle = props => {
   return (
-    <View style={Style.headerWrap}>
+    <View style={props.anotherOpt ? Style.headerWrap2 : Style.headerWrap}>
       <View style={[Style.viewStyle, props.viewStyle]}>
         {props.logoText1 && <Text style={[Style.textPart1, props.textStylePart1]}>{props.logoText1}</Text>}
         {props.logoText2 && <Text style={[Style.textPart2, props.textStylePart2]}>{props.logoText2}</Text>}

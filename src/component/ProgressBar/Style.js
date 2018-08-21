@@ -10,9 +10,16 @@ const styles = StyleSheet.create({
   textsWrap: {
     flexDirection: "row",
     borderBottomColor: "red",
-    borderWidth: 2,
-    justifyContent: "space-between"
-  }
+    justifyContent: "space-between",
+    paddingBottom: 7
+  },
+  text: {
+    color: "white"
+  },
+  text1: { fontSize: 16 },
+  text2: { fontSize: 22, fontWeight: "600" },
+  text3: { fontSize: 16 },
+  date: { fontSize: 22 }
 });
 
 export default styles;

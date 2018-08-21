@@ -31,25 +31,22 @@ const styles = StyleSheet.create({
     width: width
   },
   titleLogo: {
-    // position: "absolute",
-    top: 0,
+    paddingTop: 0,
     paddingLeft: 15,
-    paddingTop: 10,
-    // color: "white",
     flexDirection: "row",
-    justifyContent: "flex-start",
+    justifyContent: "space-between",
     alignItems: "center"
   },
   textPart1: {
     color: "white",
     fontSize: 25,
-    fontWeight: "bold"
+    fontWeight: "900"
   },
   textPart2: {
     color: "white",
-    fontSize: 17,
+    fontSize: 16,
     borderColor: "black",
-    paddingTop: 6
+    paddingTop: 7
   },
   buttonStyle: {
     backgroundColor: "white",
@@ -72,13 +69,17 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   payWrapper: {
-    flex: 1,
-    borderColor: "red",
-    borderWidth: 2,
     alignItems: "center"
   },
   mainText: {
-    paddingTop: 10
+    color: "white",
+    fontSize: 16,
+    fontWeight: "600",
+    marginTop: 20
+  },
+  DoubleArrow: {
+    paddingTop: 9,
+    paddingLeft: -15
   }
 });
 

@@ -29,11 +29,16 @@ const styles = StyleSheet.create({
   headerWrap: {
     flexDirection: "row",
     justifyContent: "space-between",
-    borderBottomColor: "red",
-    borderWidth: 2,
-    marginBottom: 25
+    alignContent: "center",
+    marginBottom: 28
   },
-  arrowStyle: {}
+  headerWrap2: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignContent: "center",
+    marginBottom: 0
+  },
+  arrowStyle: { paddingRight: 15, paddingTop: 4 }
 });
 
 export default styles;

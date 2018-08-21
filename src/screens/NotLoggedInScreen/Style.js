@@ -5,9 +5,7 @@ import { colors } from "../../utils/Color";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // justifyContent: "center",
-    alignItems: "center",
-    width: width
+    alignItems: "center"
   },
   firstView: {
     flexDirection: "column",
@@ -15,37 +13,56 @@ const styles = StyleSheet.create({
     width: width,
     height: firstViewFixedSize,
     justifyContent: "center",
-    alignItems: "center",
-    overflow: "visible",
-    position: "relative"
+    alignItems: "center"
   },
   welcomeText: {
     color: colors.purple,
-    fontSize: 20,
+    fontSize: 28,
     fontWeight: "bold",
-    marginBottom: 5
+    marginBottom: 2
   },
   mainText: {
     color: colors.purple,
     textAlign: "center",
-    width: width * 0.8,
-    marginBottom: 5
+    width: 330,
+    fontSize: 16
+  },
+  mainText2: {
+    flexDirection: "row",
+    top: 2
   },
   mainText3: {
     color: colors.purple,
     textAlign: "center",
-    width: width * 0.8,
-    marginBottom: 5
+    width: 330,
+    fontSize: 16,
+    top: 170,
+    zIndex: 3,
+    backgroundColor: "transparent",
+    position: "absolute"
+  },
+  twoPartText1: {
+    color: colors.purple,
+    fontSize: 14,
+    fontWeight: "900",
+    top: 2
+  },
+  twoPartText2: {
+    fontSize: 16,
+    color: colors.purple
   },
   arrowCircle: {
     width: circleImageRadius,
     height: circleImageRadius,
-    // justifyContent: "center",
-    // alignItems: "center",
     borderRadius: circleImageRadius / 2,
-    backgroundColor: "black",
-    // position: "relative",
-    top: 14
+    backgroundColor: colors.lightGrey,
+    position: "absolute",
+    top: 170,
+    zIndex: 1
+  },
+  image: {},
+  singleBoldWord: {
+    fontWeight: "bold"
   }
 });
 

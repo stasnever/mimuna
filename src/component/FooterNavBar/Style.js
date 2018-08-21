@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     height: footerHeight,
     flexDirection: "row",
     backgroundColor: colors.lightGrey,
-    justifyContent: "center"
+    justifyContent: "space-between"
     // position: "relative",
     // overflow: "visible"
   },
@@ -18,29 +18,28 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: "row",
-    top: -12
+    flexDirection: "row"
+    // top: -12
   },
   // borderColor: "red", borderWidth: 2
-  titleLogo1: { justifyContent: "flex-start", paddingLeft: 20 },
-  titleLogo2: { justifyContent: "center" },
-  titleLogo3: { justifyContent: "flex-end", paddingRight: 20 },
+  titleLogo1: { justifyContent: "flex-start", paddingLeft: 25 },
+  titleLogo2: { justifyContent: "center", top: -12 },
+  titleLogo3: { justifyContent: "flex-end", paddingRight: 25 },
   textPart1: {
     color: colors.purple,
     fontSize: 25,
-    fontWeight: "bold"
+    fontWeight: "900"
   },
   textPart2: {
     color: colors.purple,
-    fontSize: 17,
+    fontSize: 16,
     borderColor: "black",
-    paddingTop: 8,
-    right: 2
+    paddingTop: 7
   },
   textMiddle: {
     color: colors.purple,
-    fontSize: 40,
-    fontWeight: "bold"
+    fontSize: 42,
+    fontWeight: "900"
   }
 });
 

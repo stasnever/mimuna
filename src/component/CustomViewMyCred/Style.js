@@ -7,10 +7,10 @@ const dynamicHeight = (height - firstViewFixedSizePageB - footerHeight) * 0.5;
 console.log("dem", height, firstViewFixedSizePageB, footerHeight, dynamicHeight, dynamicHeight * 2 + firstViewFixedSizePageB + footerHeight);
 const styles = StyleSheet.create({
   dynamicView2: {
+    flex: 1,
     backgroundColor: colors.navi,
     borderColor: "black",
     flexDirection: "column",
-    height: dynamicHeight,
     width: width,
     justifyContent: "center",
     position: "relative"
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     // position: "absolute",
     top: 0,
     paddingLeft: 15,
-    paddingTop: 10,
+    paddingTop: 9,
     // color: "white",
     flexDirection: "row",
     justifyContent: "flex-start",
@@ -64,22 +64,27 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   payWrapper: {
-    flex: 1,
-    borderColor: "red",
-    borderWidth: 2,
+    flex: 2,
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "flex-end",
-    paddingRight: 15
+    paddingRight: 15,
+    borderBottomColor: colors.darkNavi,
+    borderColor: "transparent",
+    borderWidth: 2,
+    top: -12
   },
   payWrapper2: {
-    flex: 1,
+    flex: 2,
     borderColor: "red",
-    borderWidth: 2,
+    // borderWidth: 2,
     alignItems: "center"
   },
   mainText: {
-    paddingTop: 25
+    paddingTop: 15,
+    fontSize: 16,
+    color: "white",
+    fontWeight: "600"
   },
   br: {
     height: 1,
@@ -87,7 +92,10 @@ const styles = StyleSheet.create({
     borderWidth: 1
   },
   calendarTexts: {
-    paddingRight: 15
+    paddingRight: 15,
+    justifyContent: "flex-end",
+    alignContent: "center",
+    top: 7
   },
   text: {
     color: "white"
@@ -95,6 +103,12 @@ const styles = StyleSheet.create({
   amountNum: {
     fontSize: 35,
     fontWeight: "600"
+  },
+  shekel: { fontSize: 25 },
+  upperText: {
+    textAlign: "right",
+    fontSize: 16,
+    top: 4
   }
 });
 

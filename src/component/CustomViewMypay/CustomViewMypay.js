@@ -42,6 +42,7 @@ class CustomViewMypay extends Component {
               vertical
               disableVirtualization={false}
               data={this.props.AppStore.dataList}
+              keyExtractor={(item, index) => index}
               renderItem={this.renderItem}
               extraData={this.props.AppStore.dataList}
               ListFooterComponent={() => {
@@ -49,6 +50,7 @@ class CustomViewMypay extends Component {
               }}
             />
           )}
+          <Text style={Style.mainText}>{texts.logged_in_page_my_pay_main_text}</Text>
         </View>
       </View>
     );

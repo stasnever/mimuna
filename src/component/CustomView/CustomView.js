@@ -13,10 +13,6 @@ const CustomView = props => {
   return (
     <View style={props.viewStyle == "firstView" ? Style.dynamicView : Style.dynamicView2}>
       <DynamicTitle viewStyle={Style.titleLogo} textStylePart1={Style.textPart1} textStylePart2={Style.textPart2} logoText1={props.logoText1} logoText2={props.logoText2} />
-      {/* <View style={Style.titleLogo}>
-        <Text style={Style.textPart1}>{props.logoText1}</Text>
-        <Text style={Style.textPart2}>{props.logoText2}</Text>
-      </View> */}
       <View style={{ alignItems: "center" }}>
         <Button title={props.buttonText} textStyle={Style.titleStyle} buttonStyle={Style.buttonStyle} containerViewStyle={Style.containerStyle} />
         <Text style={Style.mainText}>{props.mainText}</Text>
