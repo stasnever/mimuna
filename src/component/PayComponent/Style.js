@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   iconTextWrap: {
     alignContent: "flex-end"
   },
-  icon: { top: 20 },
+  icon: {},
   cost: {
     fontSize: 22,
     color: colors.purple,

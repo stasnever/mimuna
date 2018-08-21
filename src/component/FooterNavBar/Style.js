@@ -10,9 +10,18 @@ const styles = StyleSheet.create({
     height: footerHeight,
     flexDirection: "row",
     backgroundColor: colors.lightGrey,
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    top: 20
+    // position: "relative"
+
     // position: "relative",
     // overflow: "visible"
+  },
+  footerDummy: {
+    width: width,
+    height: footerHeight + 20,
+    backgroundColor: colors.navi,
+    position: "relative"
   },
   titleLogo: {
     flex: 1,

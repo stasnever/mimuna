@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     paddingRight: 15,
     justifyContent: "flex-end",
     alignContent: "center",
-    top: 7
+    top: 6
   },
   text: {
     color: "white"

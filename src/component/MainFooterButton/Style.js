@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
   circle: {
     width: 116,
     height: 116,
-    top: -14,
+    top: -48,
+    left: 150,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 100,
@@ -25,7 +26,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderColor: colors.purple,
     borderWidth: 1,
-    position: "absolute"
+    position: "absolute",
+    zIndex: 3
   },
   titleLogo: {
     flex: 1,
