@@ -69,13 +69,14 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   payWrapper: {
+    flex: 1,
     alignItems: "center"
   },
   mainText: {
     color: "white",
     fontSize: 16,
-    fontWeight: "600",
-    marginTop: 20
+    fontWeight: "600"
+    // marginTop: 10
   },
   DoubleArrow: {
     paddingTop: 9,

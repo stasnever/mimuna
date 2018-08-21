@@ -8,14 +8,14 @@ import { observer, Provider } from "mobx-react/native";
 const stores = { AppStore };
 
 const AppNavigator = createStackNavigator({
-  LoggedIn: {
-    screen: LoggedInScreen,
+  NotLoggedIn: {
+    screen: NotLoggedInScreen,
     navigationOptions: {
       header: null
     }
   },
-  NotLoggedIn: {
-    screen: NotLoggedInScreen,
+  LoggedIn: {
+    screen: LoggedInScreen,
     navigationOptions: {
       header: null
     }

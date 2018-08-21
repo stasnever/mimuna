@@ -2,14 +2,33 @@ import { StyleSheet } from "react-native";
 import { circleImageRadius, width, payComponentHeight } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
 
+const deleteCircle = circleImageRadius * 0.55;
 const styles = StyleSheet.create({
   Container: {
     width: width - 10,
     height: payComponentHeight,
-    backgroundColor: colors.lightGrey,
+    backgroundColor: "white",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    marginTop: 20
+  },
+  ContainerDummy: {
+    width: width - 10,
+    height: payComponentHeight + 20,
+    backgroundColor: "transparent"
+  },
+  minus: { color: colors.lightRed, backgroundColor: "transparent", paddingLeft: 6, paddingTop: 5, fontSize: 10 },
+  circle: {
+    width: deleteCircle,
+    height: deleteCircle,
+    borderRadius: deleteCircle / 2,
+    backgroundColor: "white",
+    borderColor: colors.lightRed,
+    borderWidth: 1,
+    position: "absolute",
+    top: 9,
+    left: 10
   },
   circleImage: {
     width: circleImageRadius,
@@ -40,15 +59,14 @@ const styles = StyleSheet.create({
     color: colors.purple
   },
   iconText: {
-    top: -5,
-    justifyContent: "center"
-    // flexDirection: "row"
-    // alignItems: "center"
+    // justifyContent: "center"
+    flexDirection: "row",
+    alignContent: "center"
   },
   iconTextWrap: {
     alignContent: "flex-end"
   },
-  icon: {},
+  icon: { top: 0, alignItems: "center", paddingRight: 3 },
   cost: {
     fontSize: 22,
     color: colors.purple,
