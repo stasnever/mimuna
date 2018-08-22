@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "sa": "react-native run-android",
-    "test": "jest"
+    "test": "jest",
+    "android-release": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.4",

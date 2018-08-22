@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import { circleImageRadius } from "../../utils/Consts";
+import { circleImageRadius, width } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
 const styles = StyleSheet.create({
   circle: {
     width: 116,
     height: 116,
     top: -48,
-    left: 150,
+    left: width / 2 - 116 / 2,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 100,
