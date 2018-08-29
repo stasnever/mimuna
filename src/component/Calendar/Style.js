@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { width, height, firstViewFixedSize, footerHeight, APageButtonWidth } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
+import { calcSizeFont } from "../../utils/utilities";
 
 const dynamicHeight = (height - firstViewFixedSize - footerHeight) * 0.5;
 
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
   text: {
     color: "white",
     fontWeight: "bold",
-    fontSize: 28
+    fontSize: calcSizeFont(28)
   },
   textWrap: {
     position: "absolute",

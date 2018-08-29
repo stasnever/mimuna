@@ -3,6 +3,7 @@ import { Platform, Text, View } from "react-native";
 import { Images, CustomView, FooterNavBar } from "../../component";
 import { texts } from "../../utils/Texts";
 import Style from "./Style";
+import { calcSizeFont } from "../../utils/utilities";
 
 const FirstViewPageAComponent = props => {
   return (

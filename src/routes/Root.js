@@ -4,6 +4,7 @@ import { createStackNavigator } from "react-navigation";
 import NotLoggedInScreen from "../screens/NotLoggedInScreen";
 import LoggedInScreen from "../screens/LoggedInScreen";
 import AppStore from "../stores";
+import { calcSizeFont } from "../utils/utilities";
 import { observer, Provider } from "mobx-react/native";
 const stores = { AppStore };
 
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5FCFF"
   },
   welcome: {
-    fontSize: 20,
+    fontSize: calcSizeFont(20),
     textAlign: "center",
     margin: 10
   },

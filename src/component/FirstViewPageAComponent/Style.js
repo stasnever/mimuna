@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { firstViewFixedSize, width, circleImageRadius } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
-
+import { calcSizeFont } from "../../utils/utilities";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   welcomeText: {
     color: colors.purple,
-    fontSize: 28,
+    fontSize: calcSizeFont(28),
     fontWeight: "bold",
     marginBottom: 2
   },
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     color: colors.purple,
     textAlign: "center",
     width: 330,
-    fontSize: 16
+    fontSize: calcSizeFont(14)
   },
   mainText2: {
     flexDirection: "row",
@@ -36,17 +36,17 @@ const styles = StyleSheet.create({
     color: colors.purple,
     textAlign: "center",
     width: 330,
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     top: 6
   },
   twoPartText1: {
     color: colors.purple,
-    fontSize: 14,
+    fontSize: calcSizeFont(14),
     fontWeight: "900",
     top: 2
   },
   twoPartText2: {
-    fontSize: 16,
+    fontSize: calcSizeFont(14),
     color: colors.purple
   },
   singleBoldWord: {

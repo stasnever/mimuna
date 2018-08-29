@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { width, footerHeight, height, firstViewFixedSize } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
+import { calcSizeFont } from "../../utils/utilities";
 
 const dynamicHeight = (height - firstViewFixedSize - footerHeight) * 0.5;
 
@@ -36,18 +37,18 @@ const styles = StyleSheet.create({
   titleLogo3: { justifyContent: "flex-end", paddingRight: 25 },
   textPart1: {
     color: colors.purple,
-    fontSize: 25,
+    fontSize: calcSizeFont(25),
     fontWeight: "900"
   },
   textPart2: {
     color: colors.purple,
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     borderColor: "black",
     paddingTop: 7
   },
   textMiddle: {
     color: colors.purple,
-    fontSize: 42,
+    fontSize: calcSizeFont(42),
     fontWeight: "900"
   }
 });

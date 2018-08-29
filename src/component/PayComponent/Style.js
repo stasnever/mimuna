@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { circleImageRadius, width, payComponentHeight } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
+import { calcSizeFont } from "../../utils/utilities";
 
 const deleteCircle = circleImageRadius * 0.55;
 const styles = StyleSheet.create({
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
     paddingRight: 7
   },
   picText1: {
-    fontSize: 28,
+    fontSize: calcSizeFont(28),
     color: colors.purple,
     top: 3
   },
@@ -50,12 +51,12 @@ const styles = StyleSheet.create({
     paddingRight: 7
   },
   picText2: {
-    fontSize: 15,
+    fontSize: calcSizeFont(15),
     color: colors.purple,
     top: -6
   },
   picText3: {
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     color: colors.purple
   },
   iconText: {
@@ -68,12 +69,12 @@ const styles = StyleSheet.create({
   },
   icon: { top: 0, alignItems: "center", paddingRight: 3 },
   cost: {
-    fontSize: 22,
+    fontSize: calcSizeFont(22),
     color: colors.purple,
     top: 3
   },
   shekel: {
-    fontSize: 15,
+    fontSize: calcSizeFont(15),
     color: colors.purple
   },
   costIcon: {

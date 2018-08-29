@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { firstViewFixedSize, width, circleImageRadius, firstViewFixedSizePageB } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
+import { calcSizeFont } from "../../utils/utilities";
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     color: colors.purple,
     fontWeight: "bold",
     textAlign: "center",
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     paddingTop: 9
   },
   arrowCircle: {

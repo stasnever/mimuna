@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
 import { circleImageRadius, width } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
+import { calcSizeFont } from "../../utils/utilities";
+
 const styles = StyleSheet.create({
   circle: {
     width: 116,
@@ -42,12 +44,12 @@ const styles = StyleSheet.create({
   titleLogo3: { justifyContent: "flex-end", paddingRight: 20 },
   textPart1: {
     color: colors.purple,
-    fontSize: 25,
+    fontSize: calcSizeFont(25),
     fontWeight: "bold"
   },
   textPart2: {
     color: colors.purple,
-    fontSize: 17,
+    fontSize: calcSizeFont(17),
     borderColor: "black",
     paddingTop: 8,
     right: 2

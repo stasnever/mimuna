@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { width, height, firstViewFixedSize, footerHeight, APageButtonWidth, APageButtonHeight } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
+import { calcSizeFont } from "../../utils/utilities";
 
 const dynamicHeight = (height - firstViewFixedSize - footerHeight) * 0.5;
 
@@ -38,12 +39,12 @@ const styles = StyleSheet.create({
   },
   textPart1: {
     color: "white",
-    fontSize: 25,
+    fontSize: calcSizeFont(25),
     fontWeight: "900"
   },
   textPart2: {
     color: "white",
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     borderColor: "black",
     paddingTop: 7
   },
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   titleStyle: {
-    fontSize: 22,
+    fontSize: calcSizeFont(22),
     color: colors.purple
   },
   containerStyle: {
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
     color: "white",
     textAlign: "center",
     width: width * 0.6,
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     fontWeight: "900"
   },
   mainText2: {
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     width: width * 0.8,
     marginBottom: 5,
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     fontWeight: "900"
   }
 });

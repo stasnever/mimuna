@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 import { width, height, firstViewFixedSizePageB, footerHeight, APageButtonWidth } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
 import { black } from "kleur";
+import { calcSizeFont } from "../../utils/utilities";
 
 const dynamicHeight = (height - firstViewFixedSizePageB - footerHeight) * 0.5;
 console.log("dem", height, firstViewFixedSizePageB, footerHeight, dynamicHeight, dynamicHeight * 2 + firstViewFixedSizePageB + footerHeight);
@@ -34,12 +35,12 @@ const styles = StyleSheet.create({
   },
   textPart1: {
     color: "white",
-    fontSize: 25,
+    fontSize: calcSizeFont(25),
     fontWeight: "bold"
   },
   textPart2: {
     color: "white",
-    fontSize: 17,
+    fontSize: calcSizeFont(17),
     borderColor: "black",
     paddingTop: 6
   },
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
   },
   mainText: {
     paddingTop: 15,
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     color: "white",
     fontWeight: "600"
   },
@@ -101,13 +102,13 @@ const styles = StyleSheet.create({
     color: "white"
   },
   amountNum: {
-    fontSize: 35,
+    fontSize: calcSizeFont(35),
     fontWeight: "600"
   },
-  shekel: { fontSize: 25 },
+  shekel: { fontSize: calcSizeFont(25) },
   upperText: {
     textAlign: "right",
-    fontSize: 16,
+    fontSize: calcSizeFont(16),
     top: 4
   }
 });

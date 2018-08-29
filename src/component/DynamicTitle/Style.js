@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { width, height, firstViewFixedSize, footerHeight, APageButtonWidth } from "../../utils/Consts";
 import { colors } from "../../utils/Color";
+import { calcSizeFont } from "../../utils/utilities";
 
 const dynamicHeight = (height - firstViewFixedSize - footerHeight) * 0.5;
 
@@ -16,12 +17,12 @@ const styles = StyleSheet.create({
   },
   textPart1: {
     color: "white",
-    fontSize: 25,
+    fontSize: calcSizeFont(25),
     fontWeight: "bold"
   },
   textPart2: {
     color: "white",
-    fontSize: 17,
+    fontSize: calcSizeFont(17),
     borderColor: "black",
     paddingTop: 6,
     right: 2
